@@ -107,13 +107,18 @@ Refer to the linked guide for the exact commands.)
 Before using a venv, you must create it:
 ```sh
 python3 -m venv cse40_venv
+
+# Or to use a specific version of Python.
+python3.10 -m venv cse40_venv
 ```
+
 (In this document, we will assume that your venv is called `cse40_venv` and it is located in the same directory you are running commands in.)
 Once created, a venv will be a normal directory that holds all of its information and packages.
 To use your newly created venv, you will need to [activate](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment) it:
 ```sh
 source cse40_venv/bin/activate
 ```
+
 Now you may notice that your shell prompt has changed, this is a sign that the venv is working.
 With your venv activated, any packages you install will automatically be installed to the venv,
 and any packages used/imported will come from the venv.
@@ -121,6 +126,7 @@ If you want to stop using the venv, you can just deactivate it at any time:
 ```sh
 deactivate
 ```
+
 Note that your shell prompt should have changed back.
 Your venv can be re-activated at any time in the same way as before.
 
