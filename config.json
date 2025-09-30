@@ -5,3 +5,12 @@
     "user": "sslug@ucsc.edu",
     "pass": "1234567890"
 }
+
+{
+    "course": "CSE40",
+    "assignment": "HO0",
+    "server": "http://lighthouse.soe.ucsc.edu",
+    "user": "<your UCSC email>",
+    "pass": "<password from TA email>"
+}
+
