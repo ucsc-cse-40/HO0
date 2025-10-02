@@ -57,6 +57,28 @@ The setup for WSL is dependent on your version of Windows and your machine setti
 so make sure to consult the [FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq)
 or [troubleshooting guide](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting) if you are having issues getting WSL working.
 
+### (For Windows Users Only) Windows Subsystem For Linux
+
+If you're working off a Windows machine, we highly encourage you to use Windows Subsystem for Linux (WSL).  
+This provides a standardized Linux environment for completing your assignments.
+The TAs may not be able to help you if you are using a different setup.
+
+If you already have WSL installed, you can simply run it from the Command Prompt or PowerShell with:
+```sh
+wsl ~
+```
+
+If WSL does not have a Distro installed, you can install the one recommended for this course by running the following:
+```sh
+wsl --install -d Ubuntu-22.04
+```
+Note that you may need to restart your computer after this step.  Afterwards you can follow the previous step to start WSL.
+
+The first time you start WSL with a new distro, it may be worthwhile to run the following command to update the built in package manager with the following:
+```sh
+sudo apt update
+```
+
 ### Python
 
 We will be using Python (versions 3.10 or 3.11) in this course.
